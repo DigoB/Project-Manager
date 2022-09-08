@@ -14,9 +14,6 @@ public class Task {
     private Date createdAt;
     private Date updatedAt;
 
-    public Task() {
-    }
-
     public Task(Integer projectid, String name, String description, String notes, boolean isCompleted, Date deadLine, Date createdAt, Date updatedAt) {
         this.projectid = projectid;
         this.name = name;
@@ -26,6 +23,10 @@ public class Task {
         this.deadLine = deadLine;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+    }
+
+    public Task() {
+        this.createdAt = new Date();
     }
 
     public Integer getId() {
