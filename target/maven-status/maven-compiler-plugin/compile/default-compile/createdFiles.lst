@@ -1,0 +1,4 @@
+src\model\Project.class
+src\model\Task.class
+src\util\ConnectionFactory.class
+src\main.class
